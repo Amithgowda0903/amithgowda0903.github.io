@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amith N | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Share Tech Mono', monospace;
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    a { color: #ff4d4d; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #111;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #ff4d4d;
+    }
+    nav h1 { color: #ff4d4d; font-size: 1.5rem; }
+    nav ul { display: flex; list-style: none; gap: 1.5rem; }
+    nav ul li { font-weight: bold; }
+
+    /* Sections */
+    section { padding: 4rem 2rem; max-width: 1000px; margin: auto; }
+    h2 { color: #ff4d4d; margin-bottom: 1rem; border-bottom: 1px solid #ff4d4d; display: inline-block; padding-bottom: 0.3rem; }
+
+    /* Typing animation */
+    #intro {
+      color: #00ff00;
+      font-size: 1.2rem;
+      white-space: pre;
+      overflow: hidden;
+      border-right: .15em solid #00ff00;
+      width: 0;
+      animation: typing 4s steps(50, end) forwards, blink .75s step-end infinite;
+      margin-top: 1rem;
+    }
+    @keyframes typing { from { width: 0 } to { width: 100% } }
+    @keyframes blink { 50% { border-color: transparent; } }
+
+    /* Skills */
+    .skills { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
+    .skill { background-color: #1a1a1a; padding: 0.7rem 1rem; border-radius: 5px; border-left: 3px solid #ff4d4d; transition: transform 0.3s, box-shadow 0.3s; }
+    .skill:hover { transform: translateY(-5px); box-shadow: 0 0 10px #ff4d4d; }
+
+    /* Projects */
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+    .project-card {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-left: 3px solid #ff4d4d;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .project-card:hover { 
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #ff4d4d;
+    }
+
+    /* Contact */
+    .contact-info { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem; }
+
+    /* Footer */
+    footer { text-align: center; padding: 2rem; background-color: #111; margin-top: 2rem; border-top: 1px solid #ff4d4d; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Amith N</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div id="intro">Hi! I'm Amith N, a tech enthusiast focused on Python, Django, Data Science, AI, and Cybersecurity. I create tools, solve complex problems, and explore the digital frontier...</div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">Django</div>
+      <div class="skill">Data Science</div>
+      <div class="skill">Machine Learning</div>
+      <div class="skill">AI</div>
+      <div class="skill">Cybersecurity</div>
+      <div class="skill">SQL / MySQL</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Linux / Networking</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects & Cases</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Hydranet Artifacts</h3>
+        <p>Encrypted traces, obscure logs, and anomalous patterns. Connect the dots to uncover the hidden story.</p>
+      </div>
+      <div class="project-card">
+        <h3>Black Swa Artifacts</h3>
+        <p>Investigated mysterious data exfiltration patterns and hidden system manipulations. A case full of digital intrigue.</p>
+      </div>
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:Amithgowda2210@outlook.com">Amithgowda2210@outlook.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/amithn" target="_blank">linkedin.com/in/amithn</a></p>
+      <p>GitHub: <a href="https://github.com/amithn" target="_blank">github.com/amithn</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Amith N. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
